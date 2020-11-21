@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Sentry">
-      <Version>2.1.6</Version>
+      <Version>3.0.0-alpha.5</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
   </ItemGroup>
