@@ -75,5 +75,11 @@ namespace Sentry.Samples.Mobile
                 throw new CookieException();
             }
         }
+
+        private void NatieCrash(object sender, EventArgs e)
+        {
+            App.NativeCrash.Crash();
+        }
+
     }
 }

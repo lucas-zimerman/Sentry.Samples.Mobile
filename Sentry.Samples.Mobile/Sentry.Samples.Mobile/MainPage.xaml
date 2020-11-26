@@ -8,5 +8,6 @@
         <Button Text="Send Exception" Clicked="SendExceptionEvent"/>
         <Button Text="Try catch async" Clicked="TryCatchAsync"/>
         <Button Text="Crash me" Clicked="CrashEvent"/>
+        <Button Text="Native Crash" Clicked="NatieCrash"/>
     </StackLayout>
 </ContentPage>

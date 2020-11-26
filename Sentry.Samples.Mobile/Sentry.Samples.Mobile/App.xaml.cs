@@ -7,13 +7,14 @@ namespace Sentry.Samples.Mobile
 {
     public partial class App : Application
     {
+        public static INativeCrash NativeCrash;
         public App()
         {
             _ = SentrySdk.Init(o =>
             {
                 o.Debug = true;
                 o.Dsn = "https://80aed643f81249d4bed3e30687b310ab@o447951.ingest.sentry.io/5428537";
-                o.CacheDirectoryPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "sentryLogs");
+              //  o.CacheDirectoryPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "sentryLogs");
             });
 
             InitializeComponent();

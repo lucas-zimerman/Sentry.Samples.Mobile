@@ -17,6 +17,8 @@ namespace Sentry.Samples.Mobile.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+            App.NativeCrash = new NativeCrash();
+
             var @return = base.FinishedLaunching(app, options);
 
             SentrySdk.AddBreadcrumb(

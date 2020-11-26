@@ -14,6 +14,8 @@ namespace Sentry.Samples.Mobile.Droid
 
             base.OnCreate(savedInstanceState);
 
+            App.NativeCrash = new NativeCrash();
+
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
