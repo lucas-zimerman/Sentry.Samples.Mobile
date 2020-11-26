@@ -1,4 +1,6 @@
 ﻿using Foundation;
+using ObjCRuntime;
+using System;
 using UIKit;
 
 namespace Sentry.Samples.Mobile.iOS
@@ -7,21 +9,7 @@ namespace Sentry.Samples.Mobile.iOS
     {
         public void Crash()
         {
-            var window = UIApplication.SharedApplication.KeyWindow;
-            var vc = window.RootViewController;
-
-            vc = vc.PresentedViewController;
-            UIView.BeginAnimations("Animate for keyboard");
-            UIView.SetAnimationBeginsFromCurrentState(true);
-            UIView.SetAnimationDuration(UIKeyboard.AnimationDurationFromNotification(new NSNotification(null)));
-            UIView.SetAnimationCurve((UIViewAnimationCurve)UIKeyboard.AnimationCurveFromNotification(new NSNotification(null)));
-
-            var keyboardFrame = true ? UIKeyboard.FrameEndFromNotification(new NSNotification(null)) : UIKeyboard.FrameBeginFromNotification(new NSNotification(null));
-
-
-            UIView.CommitAnimations();
-
-            }
+            var window = UIApplication.Alloc(new Class(new IntPtr(-1)));
         }
     }
 }
