@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sentry" Version="3.0.0-alpha.5" />
+    <PackageReference Include="Sentry.Xamarin" Version="1.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
   </ItemGroup>
 </Project>
